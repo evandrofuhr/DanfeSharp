@@ -64,7 +64,7 @@ namespace DanfeSharp.Modelo
         /// <para>Tag fone</para>
         /// </summary>
         public String Telefone { get; set; }
-        
+
         /// <summary>
         /// <para>CNPJ ou CPF</para>
         /// <para>Tag CNPJ ou CPF</para>
@@ -131,12 +131,25 @@ namespace DanfeSharp.Modelo
                 StringBuilder sb = new StringBuilder()
                     .Append(Municipio).Append(" - ").Append(EnderecoUf);
 
+                return sb.ToString();
+            }
+        }
+
+        /// <summary>
+        /// Linha 4 do Endereço
+        /// </summary>
+        public String EnderecoLinha4
+        {
+            get
+            {
+                StringBuilder sb = new StringBuilder();
+
                 if (!String.IsNullOrWhiteSpace(Telefone))
                     sb.Append(" Fone: ").Append(Formatador.FormatarTelefone(Telefone));
 
-                return sb.ToString();               
+                return sb.ToString();
             }
         }
-        
+
     }
 }

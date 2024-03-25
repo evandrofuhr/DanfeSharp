@@ -1,6 +1,6 @@
-﻿using System;
+﻿using DanfeSharp.Graphics;
+using System;
 using System.Drawing;
-using DanfeSharp.Graphics;
 
 namespace DanfeSharp
 {
@@ -37,12 +37,12 @@ namespace DanfeSharp
             Y = y;
         }
 
-        public virtual void SetPosition(PointF p) => SetPosition(p.X, p.Y); 
+        public virtual void SetPosition(PointF p) => SetPosition(p.X, p.Y);
 
         public virtual void SetSize(float w, float h)
         {
             Width = w;
-            if(Height != h)
+            if (Height != h)
                 Height = h;
         }
         public virtual void SetSize(SizeF s) => SetSize(s.Width, s.Height);

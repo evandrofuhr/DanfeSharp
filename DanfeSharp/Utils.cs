@@ -14,13 +14,13 @@ namespace DanfeSharp
             if (String.IsNullOrWhiteSpace(str)) return false;
 
             return Regex.IsMatch(str, $@"({chave}):?\s*{valor}", RegexOptions.IgnoreCase);
-        } 
-        
+        }
+
         public static String TipoDFeDeChaveAcesso(String chaveAcesso)
         {
             if (String.IsNullOrWhiteSpace(chaveAcesso)) throw new ArgumentException(nameof(chaveAcesso));
 
-            if(chaveAcesso.Length == 44)
+            if (chaveAcesso.Length == 44)
             {
                 String f = chaveAcesso.Substring(20, 2);
 

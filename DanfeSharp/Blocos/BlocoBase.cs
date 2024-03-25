@@ -1,7 +1,7 @@
-﻿using System;
+﻿using DanfeSharp.Elementos;
 using DanfeSharp.Graphics;
-using DanfeSharp.Elementos;
 using DanfeSharp.Modelo;
+using System;
 
 namespace DanfeSharp.Blocos
 {
@@ -60,6 +60,6 @@ namespace DanfeSharp.Blocos
         }
 
         public override float Height { get => MainVerticalStack.Height; set => throw new NotSupportedException(); }
-        public override bool PossuiContono => false;            
+        public override bool PossuiContono => false;
     }
 }

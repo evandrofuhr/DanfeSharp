@@ -19,15 +19,15 @@ namespace DanfeSharp.Esquemas
         [DebuggerStepThrough]
         public static Versao Parse(String str)
         {
-            if(String.IsNullOrWhiteSpace(str))
+            if (String.IsNullOrWhiteSpace(str))
             {
-                throw new ArgumentException("O parâmetro str não pode ser nulo ou vazio.","str");
+                throw new ArgumentException("O parâmetro str não pode ser nulo ou vazio.", "str");
             }
 
             Match m = Regex.Match(str, _Pattern);
             Versao v = new Versao(0, 0);
 
-            if(!m.Success)
+            if (!m.Success)
             {
                 throw new ArgumentException("A versão não pode ser interpretada.", "str");
             }

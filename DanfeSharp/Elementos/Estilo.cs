@@ -1,5 +1,4 @@
 ﻿using DanfeSharp.Graphics;
-using System;
 using pcf = org.pdfclown.documents.contents.fonts;
 
 namespace DanfeSharp
@@ -7,7 +6,7 @@ namespace DanfeSharp
     /// <summary>
     /// Coleção de fontes e medidas a serem compartilhadas entre os elementos básicos.
     /// </summary>
-    internal class Estilo 
+    internal class Estilo
     {
         public float PaddingSuperior { get; set; }
         public float PaddingInferior { get; set; }

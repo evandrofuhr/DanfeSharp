@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DanfeSharp
 {
@@ -81,7 +79,7 @@ namespace DanfeSharp
                 var c = Colunas[i];
                 var v = Linhas[LinhaAtual][i];
 
-                float w = (Width * c.PorcentagemLargura) / 100F;               
+                float w = (Width * c.PorcentagemLargura) / 100F;
 
                 if (!String.IsNullOrWhiteSpace(v))
                 {
@@ -103,12 +101,12 @@ namespace DanfeSharp
             if (tbm + _DY + PaddingInferior + PaddingSuperior > BoundingBox.Bottom) return false;
 
             for (int i = 0; i < Colunas.Count; i++)
-            { 
-                if(tb[i] != null)
+            {
+                if (tb[i] != null)
                     tb[i].Draw(gfx);
             }
 
-             _DY += Math.Max(tbm, FonteCorpo.AlturaLinha) + PaddingSuperior + PaddingInferior;
+            _DY += Math.Max(tbm, FonteCorpo.AlturaLinha) + PaddingSuperior + PaddingInferior;
 
             return true;
         }
@@ -182,7 +180,7 @@ namespace DanfeSharp
                 }
             }
 
-          
+
 
 
 

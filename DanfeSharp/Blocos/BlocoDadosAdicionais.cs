@@ -1,7 +1,5 @@
 ﻿using DanfeSharp.Graphics;
 using DanfeSharp.Modelo;
-using DanfeSharp;
-using System;
 
 namespace DanfeSharp.Blocos
 {
@@ -22,8 +20,8 @@ namespace DanfeSharp.Blocos
             .ComElemento(_cInfComplementares)
             .ComElemento(_cReservadoFisco)
             .ComLarguras(InfComplementaresLarguraPorcentagem, 0);
-                        
-            MainVerticalStack.Add(_Linha);           
+
+            MainVerticalStack.Add(_Linha);
         }
 
         public override float Width

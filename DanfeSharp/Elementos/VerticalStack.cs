@@ -1,7 +1,7 @@
-﻿using System;
+﻿using DanfeSharp.Graphics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using DanfeSharp.Graphics;
 
 namespace DanfeSharp
 {
@@ -45,7 +45,7 @@ namespace DanfeSharp
                 db.Width = Width;
                 db.SetPosition(x, y);
                 db.Draw(gfx);
-                y += db.Height;             
+                y += db.Height;
             }
         }
 

@@ -117,7 +117,7 @@ namespace DanfeSharp.Modelo
                 {
                     descriCaoCompleta += "\r\n" + InformacoesAdicionais;
                 }
-                
+
                 return descriCaoCompleta;
             }
         }

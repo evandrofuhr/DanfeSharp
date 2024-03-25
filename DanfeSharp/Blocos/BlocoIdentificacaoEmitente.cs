@@ -1,6 +1,6 @@
-﻿using System.Drawing;
+﻿using DanfeSharp.Modelo;
 using org.pdfclown.documents.contents.xObjects;
-using DanfeSharp.Modelo;
+using System.Drawing;
 
 namespace DanfeSharp.Blocos
 {

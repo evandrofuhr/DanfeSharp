@@ -1,8 +1,8 @@
-﻿using System;
+﻿using DanfeSharp.Graphics;
+using DanfeSharp.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
-using DanfeSharp.Graphics;
-using DanfeSharp.Modelo;
 
 namespace DanfeSharp.Blocos
 {
@@ -25,7 +25,7 @@ namespace DanfeSharp.Blocos
             String cabecalho4 = ViewModel.Emitente.CRT == "3" ? "O/CST" : "O/CSOSN";
 
             if (ViewModel.IsRetrato)
-            { 
+            {
                 Tabela
                 .ComColuna(8.5f, ac, "CÓDIGO", "PRODUTO")
                 .ComColuna(0, ae, "DESCRIÇÃO DO PRODUTO / SERVIÇO")
@@ -97,7 +97,7 @@ namespace DanfeSharp.Blocos
 
             CabecalhoBloco.SetPosition(X, Y);
             CabecalhoBloco.Width = Width;
-            CabecalhoBloco.Draw(gfx);    
+            CabecalhoBloco.Draw(gfx);
         }
 
 

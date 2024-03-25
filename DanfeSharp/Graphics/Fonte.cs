@@ -1,5 +1,5 @@
-﻿using pcf = org.pdfclown.documents.contents.fonts;
-using System;
+﻿using System;
+using pcf = org.pdfclown.documents.contents.fonts;
 
 namespace DanfeSharp.Graphics
 {
@@ -51,7 +51,7 @@ namespace DanfeSharp.Graphics
         /// <param name="c">Char</param>
         /// <returns>Largura em mm.</returns>
         public float MedirLarguraChar(char c) => (float)FonteInterna.GetWidth(c, Tamanho).ToMm();
-        
+
         /// <summary>
         /// Medida da altura da linha.
         /// </summary>

@@ -1,5 +1,5 @@
-﻿using System;
-using DanfeSharp.Graphics;
+﻿using DanfeSharp.Graphics;
+using System;
 
 namespace DanfeSharp
 {
@@ -19,8 +19,8 @@ namespace DanfeSharp
         public override void Draw(Gfx gfx)
         {
             base.Draw(gfx);
-            gfx.DrawString(Cabecalho.ToUpper(), BoundingBox, Estilo.FonteBlocoCabecalho, 
-                AlinhamentoHorizontal.Esquerda, AlinhamentoVertical.Base );
+            gfx.DrawString(Cabecalho.ToUpper(), BoundingBox, Estilo.FonteBlocoCabecalho,
+                AlinhamentoHorizontal.Esquerda, AlinhamentoVertical.Base);
         }
 
         public override float Height { get => MargemSuperior + Estilo.FonteBlocoCabecalho.AlturaLinha; set => throw new NotSupportedException(); }

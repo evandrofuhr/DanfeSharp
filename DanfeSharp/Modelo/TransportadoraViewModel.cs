@@ -5,7 +5,7 @@ namespace DanfeSharp.Modelo
 {
     public class TransportadoraViewModel : EmpresaViewModel
     {
-        public static readonly Dictionary<int, String> ModalidadesFrete = new Dictionary<int,string>()
+        public static readonly Dictionary<int, String> ModalidadesFrete = new Dictionary<int, string>()
         {
             {0, "Por conta Remetente"},
             {1, "Por conta Destinatário"},
@@ -20,7 +20,7 @@ namespace DanfeSharp.Modelo
         /// <para>Tag modFrete</para>
         /// </summary>
         public int ModalidadeFrete { get; set; }
-        
+
         /// <summary>
         /// <para>Registro Nacional de Transportador de Carga (ANTT).</para>
         /// <para>Tag RNTC</para>

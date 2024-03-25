@@ -21,7 +21,7 @@ namespace DanfeSharp.Blocos
             var coluna1 = new VerticalStack();
             coluna1.Add(textoRecebimento, campos);
 
-            var linha = new FlexibleLine() {Height = coluna1.Height }
+            var linha = new FlexibleLine() { Height = coluna1.Height }
             .ComElemento(coluna1)
             .ComElemento(nfe)
             .ComLarguras(0, 16);

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using DanfeSharp.Graphics;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text.RegularExpressions;
-using DanfeSharp.Graphics;
 
 namespace DanfeSharp
 {
@@ -167,7 +167,7 @@ namespace DanfeSharp
         }
 
         private void DrawBarcode(RectangleF rect, Gfx gfx)
-        {      
+        {
 
             List<byte> codeBytes = new List<byte>();
 
@@ -219,7 +219,7 @@ namespace DanfeSharp
             base.Draw(gfx);
 
             float w2 = (Width - Largura) / 2F;
-            DrawBarcode(new RectangleF( X + w2 , Y + MargemVertical, Largura, Height - 2* MargemVertical), gfx);
+            DrawBarcode(new RectangleF(X + w2, Y + MargemVertical, Largura, Height - 2 * MargemVertical), gfx);
 
 
         }

@@ -2,7 +2,7 @@ using System;
 
 namespace DanfeSharp
 {
-	internal class AlturaFixaAttribute : Attribute
+    internal class AlturaFixaAttribute : Attribute
     {
-	}
+    }
 }

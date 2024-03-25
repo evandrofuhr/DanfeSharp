@@ -1,18 +1,18 @@
-﻿using System.Drawing;
-using System;
+﻿using org.pdfclown.documents.contents.composition;
 using org.pdfclown.documents.contents.xObjects;
-using org.pdfclown.documents.contents.composition;
+using System;
+using System.Drawing;
 
 namespace DanfeSharp.Graphics
 {
-    internal class Gfx 
+    internal class Gfx
     {
         public PrimitiveComposer PrimitiveComposer { get; private set; }
 
         public Gfx(PrimitiveComposer primitiveComposer)
         {
-            PrimitiveComposer = primitiveComposer ?? throw new ArgumentNullException(nameof(primitiveComposer));          
-        }            
+            PrimitiveComposer = primitiveComposer ?? throw new ArgumentNullException(nameof(primitiveComposer));
+        }
 
         internal void DrawString(string str, RectangleF rect, Fonte fonte, AlinhamentoHorizontal ah = AlinhamentoHorizontal.Esquerda, AlinhamentoVertical av = AlinhamentoVertical.Topo)
         {
@@ -25,7 +25,7 @@ namespace DanfeSharp.Graphics
             if (av == AlinhamentoVertical.Base)
                 p.Y = rect.Bottom - fonte.AlturaLinha;
             else if (av == AlinhamentoVertical.Centro)
-                p.Y += (rect.Height - fonte.AlturaLinha) / 2F ;
+                p.Y += (rect.Height - fonte.AlturaLinha) / 2F;
 
             if (ah == AlinhamentoHorizontal.Direita)
                 p.X = rect.Right - fonte.MedirLarguraTexto(str);
@@ -59,12 +59,12 @@ namespace DanfeSharp.Graphics
             SizeF s = new SizeF();
             SizeF xs = xobj.Size.ToMm();
 
-            if(r.Height >= r.Width)
+            if (r.Height >= r.Width)
             {
-                if(xs.Height >= xs.Width)
+                if (xs.Height >= xs.Width)
                 {
                     s.Height = r.Height;
-                    s.Width = (s.Height * xs.Width) / xs.Height; 
+                    s.Width = (s.Height * xs.Width) / xs.Height;
                 }
                 else
                 {

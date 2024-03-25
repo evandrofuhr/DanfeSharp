@@ -1,9 +1,9 @@
-﻿using System;
+﻿using DanfeSharp.Graphics;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using DanfeSharp.Graphics;
 
 namespace DanfeSharp
 {
@@ -36,7 +36,7 @@ namespace DanfeSharp
             set => throw new NotSupportedException();
         }
 
-       
+
 
         public override void Draw(Gfx gfx)
         {
@@ -70,7 +70,7 @@ namespace DanfeSharp
                     w1 = 0;
                 }
 
-                w1 += cw;              
+                w1 += cw;
                 sb1.Append(c[i2]);
             }
 
@@ -90,7 +90,7 @@ namespace DanfeSharp
                 var wl = blocksW[i];
 
                 if (wl > Width)
-                {                 
+                {
 
                     if (sb.Length > 0)
                     {
